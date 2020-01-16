@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial;
+}
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: papayawhip;
+}
+.container {
+  width: 80vw;
+}
+.form-header {
+  width: 80vw;
+  background-color: #c7cede;
+  padding: 0px 20px;
+}
+.form-header h1#title {
+  text-align: center;
+  width: 100%;
+  padding: 20px 0px 0px;
+  color: #707070;
+}
+.form-header #description {
+  width: 100%;
+  padding: 20px 0px;
+}
+.form {
+  background-color: White;
+  display: flex;
+  justify-content: center;
+}
+#survey-form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.form-group {
+  padding: 0.8vh;
+}
+.experience-radio {
+  margin-left: 20px;
+  text-align: start;
+}
+.achivements-checkboxes {
+  margin-left: 20px;
+  text-align: start;
+}
+label.form-check-label {
+  font-size: 0.8em;
+  color: gray;
+}
+.form-group:nth-last-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.textarea-label {
+  padding-bottom: 8px;
+  font-size: 0.8em;
+}
+#feedback {
+  resize: none;
+  overflow: auto;
+}
+#submit {
+  background-color: #c7cede;
+  color: white;
+  font-size: 1.2em;
+  padding: 8px 20px;
+}

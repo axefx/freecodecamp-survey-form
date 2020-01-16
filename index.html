@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FreeCodeCamp Survey Form</title>
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <div class="container">
+      <div class="form-header">
+        <h1 id="title">Developer Survey Form</h1>
+        <p id="description">
+          My freecodecamp Survey Form project surveys developers on their
+          experience and knowledge
+        </p>
+      </div>
+      <div class="form">
+        <form action="" id="survey-form">
+          <div class="form-group">
+            <label for="name" id="name-label">Name:</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email" id="email-label">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="number" id="number-label">Age:</label>
+            <input
+              type="number"
+              id="number"
+              min="1"
+              max="125"
+              placeholder="Age"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label disabled>Gender:</label>
+            <select
+              class="form-control"
+              name="currentPos"
+              id="dropdown"
+              required
+            >
+              <option disabled selected value> -- select an option -- </option>
+              <option value="other">Other</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+            </select>
+          </div>
+          <div class="form-group experience-radio">
+            <div class="form-check">
+              <input
+                id="less-2"
+                class="form-check-input"
+                type="radio"
+                name="experience-years"
+                value="<less than 2"
+                checked
+                required
+              />
+              <label for="less-2" class="form-check-label"
+                >less than 2 years of experience</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                id="2to5"
+                class="form-check-input"
+                type="radio"
+                name="experience-years"
+                value="2to5"
+              />
+              <label for="2to5" class="form-check-label"
+                >2 to 5 years of experience</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                id="more-than 5"
+                class="form-check-input"
+                type="radio"
+                name="experience-years"
+                value="more than 5"
+              />
+              <label for="more-than 5" class="form-check-label"
+                >more than 5 years experience</label
+              >
+            </div>
+          </div>
+          <div class="form-group achivements-checkboxes">
+            <div class="form-check">
+              <input
+                id="degree"
+                class="form-check-input"
+                type="checkbox"
+                value="degree"
+              />
+              <label for="degree" class="form-check-label">earned degree</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                id="employed"
+                class="form-check-input"
+                type="checkbox"
+                value="employed"
+              />
+              <label for="employed" class="form-check-label">employed</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="feedback" class="textarea-label"
+              >Please leave a comment or feedback.</label
+            >
+            <textarea
+              class="form-control"
+              name="comment"
+              id="feedback"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
